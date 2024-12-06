@@ -43,7 +43,6 @@ root.render(
     {/* <ProductCards>
         <h2>watch</h2>
         <p>price: 1000/-</p>
-        
     </ProductCards> */}
     {/* <Home/> */}
    {/* <Acordian/> */}
