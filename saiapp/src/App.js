@@ -1,6 +1,18 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Lifecycle from "./lifecyclemethods/mountingstate/L1mounting"
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Task1 from "./tasks/task1/react";
+import TimeTable from "./tasks/task2table/sampletable"
+import Resume from "./tasks/task4resume/resume"
+import Acordian from "./tasks/task5/accordion"
+import Table from './tasks/task6/table';
+import Counter from "./tasks/task7counter/counter"
+import Form from "./tasks/task8form/form";
+import Numbercheck from "./tasks/task9evenodd/check"
+import Todolist from "./tasks/task10todo/todo"
+import Lifecycle from "./tasks/task11spinner/spinner"
+// import Profilecard from "./tasks/task11spinner/profilecard"
 
 function App() {
   return (
@@ -22,10 +34,18 @@ function App() {
 
 
       {/* tasks */}
+          <Task1/>
+          <TimeTable/>
+          {/* <Resume/> */}
+          <Acordian/>
+          <Table/>
+          <Counter/>
+          <Form/>
+          <Numbercheck/>
+          <Todolist/>
+          <Lifecycle/>
 
-      <Lifecycle/>
-
-
+        {/* <Profilecard/> */}
 
     </div>
   );

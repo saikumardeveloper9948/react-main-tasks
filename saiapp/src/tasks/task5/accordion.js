@@ -274,6 +274,7 @@ const products = [
 function Acordian() {
   return (
     <>
+    <div className="accordion" id="accordionExample"> <h1 style={{textAlign:"center"}}> Task:5 </h1></div>
     {products.map((a,b)=>{
         return (
           <Accordion>

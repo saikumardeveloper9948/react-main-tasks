@@ -1,8 +1,12 @@
-import "./sample.css"
+import "./sampletable.css"
 
-function Tellme(){
+function TimeTable(){
     return (
-        <><table>
+        <>
+        <div>
+        <div style={{textAlign:"center"}}><h1 >TASK : 2</h1></div>
+        </div>
+        <table style={{margin:"auto"}}>
             <tr style={{backgroundColor:"red"}}>
             <td style={{backgroundColor:"red"}}>Time</td>
             <td style={{backgroundColor:"red"}}>mon</td>
@@ -83,4 +87,4 @@ function Tellme(){
 
 
 
-export default Tellme
+export default TimeTable

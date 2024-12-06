@@ -1,8 +1,8 @@
 import React from "react";
-import Profilecard from "../../../REACT-TASKS-10k/tasksreact/src/profilecard";
-// import Button from 'react-bootstrap/Button';
-// import Spinner from 'react-bootstrap/Spinner';
+import Profilecard from "./profilecard";
+import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
+
 
 export default class Lifecycle extends React.Component {
   //executes 1st
@@ -37,11 +37,11 @@ export default class Lifecycle extends React.Component {
     console.log("rendering");
     return (
       <div>
-        <div style={{textAlign:"center"}}><h1 >TASK : 10</h1></div>
+        <div style={{textAlign:"center"}}><h1 >TASK : 11</h1></div>
         <div>
        {this.state.loading?(
-      <div style={{textAlign:"center"}}>
-        {/* <Button variant="primary" disabled>
+      <div style={{textAlign:"center", marginTop:"250px"}}>
+        <Button variant="primary" disabled>
         <Spinner
           as="span"
           animation="grow"
@@ -50,8 +50,8 @@ export default class Lifecycle extends React.Component {
           aria-hidden="true"
         />
         Loading...
-      </Button> */}
-      <Spinner animation="border" variant="warning" />
+      </Button>
+      {/* <Spinner animation="border" variant="warning" /> */}
       </div>
         
     ) :(
@@ -67,6 +67,7 @@ export default class Lifecycle extends React.Component {
           {this.state.products.map((a, b) => {
             return (
               <Profilecard
+                id={a.id}
                 title={a.title}
                 image={a.image}
                 category={a.category}

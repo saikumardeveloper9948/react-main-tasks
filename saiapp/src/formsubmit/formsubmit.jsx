@@ -48,11 +48,14 @@ class Form extends React.Component {
   };
   render() {
     return (
-      <div>
-        <form onSubmit={this.submit}>
-          <input type="text" name="fname" onChange={this.onchange} />
-          <input type="text" name="sname" onChange={this.onchange} />
+      <div >
+        
+        <form onSubmit={this.submit} style={{border:"2px solid red" , backgroundColor:"orange"}}>
+          <div style={{}}>
+          <input type="text" name="fname" onChange={this.onchange} /> <br/> <br />
+          <input type="text" name="sname" onChange={this.onchange} />  <br/> <br />
           <input type="submit" />
+          </div>
         </form>
         <p>{this.state.fullname}</p>
       </div>

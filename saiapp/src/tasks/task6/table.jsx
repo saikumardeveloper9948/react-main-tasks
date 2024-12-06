@@ -243,17 +243,14 @@ let obj=[
       }
     }
   ]
-
-  // const products = obj.map((a,b)=>{
-  //     return(
-        
-  //     )
-  // });
-
 class Table extends Component {
     render(){
         return(
-            <div> 
+           <div>
+            <div style={{textAlign:"center"}}><h1>TASK : 6</h1>
+            <p>Render the bootstrap table for same data</p>
+            </div>
+             <div> 
               <table >
                 <tr style={{border:"2px solid black"}}>
                     <th style={{border:"2px solid black"}}>S.No</th>
@@ -279,6 +276,7 @@ class Table extends Component {
                 })}
               </table>
             </div>
+           </div>
         )
     }
 }
