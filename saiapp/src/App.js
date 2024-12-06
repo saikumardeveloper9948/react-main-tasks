@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Lifecycle from "./lifecyclemethods/mountingstate/L1mounting"
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
 
       {/* tasks */}
 
-      
+      <Lifecycle/>
 
 
 

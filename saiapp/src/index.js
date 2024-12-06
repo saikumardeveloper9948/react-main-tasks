@@ -25,7 +25,7 @@ import reportWebVitals from './reportWebVitals';
 
 // import BasicExample from "./spin"
 
-import Lifecycle from "./lifecyclemethods/mountingstate/L1mounting"
+
 
 
 
@@ -59,7 +59,7 @@ root.render(
 
    {/* <Todo/> */}
 
-   <Lifecycle/>
+   
 
    {/* <BasicExample/> */}
 
