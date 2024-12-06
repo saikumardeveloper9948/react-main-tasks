@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import './index.css';
-// import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Tellme from './sample.js';
 // import Main from './mainComponent.jsx';
@@ -23,7 +23,7 @@ import reportWebVitals from './reportWebVitals';
 // import Todo from "./todolist/index"
 //  import Firstfunc from "./functioncomps/counter/fcounter"
 
-import BasicExample from "./spin"
+// import BasicExample from "./spin"
 
 import Lifecycle from "./lifecyclemethods/mountingstate/L1mounting"
 
@@ -32,7 +32,7 @@ import Lifecycle from "./lifecyclemethods/mountingstate/L1mounting"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     {/* <Tellme/> */}
     {/* <Navbar/> */}
     {/* <Main/> */}
