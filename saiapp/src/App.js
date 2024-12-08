@@ -14,6 +14,7 @@ import Numbercheck from "./tasks/task9evenodd/check"
 import Todolist from "./tasks/task10todo/todo"
 import Lifecycle from "./tasks/task11spinner/spinner";
 import Updating from "./tasks/task12buttoncards/updatingphase";
+import CounterFc from "./tasks/task13fcounter/fcounter"
 // import Profilecard from "./tasks/task11spinner/profilecard"
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <Todolist/>
           <Lifecycle/>
           <Updating/>
+          <CounterFc/>
 
        
 
