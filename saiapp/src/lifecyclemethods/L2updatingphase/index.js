@@ -6,9 +6,16 @@ import SampleProfilecard from "../sampleprofilecard";
 import LoadSpinner from "../../loadspinner/index"
 
 export default class Updating extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { count: 0, product: null };
+  constructor(props) { //here props is the object that contains the data passed from the parent component
+    super(props);  // this is a call to the parent class constructor
+    this.state = { count: 0, product: null, color:"green" };
+  }
+
+  static getDerivedStateFromProps(props,state){ // this will execute when component is mounted
+          // ---> in this we should not use this.setState 
+    // console.log(props,"props");
+    // console.log(state,"state");
+    return {color:props.color};
   }
   componentDidUpdate(prevprops, prevstate) {
     console.log(prevstate, "previous state");
@@ -46,10 +53,10 @@ export default class Updating extends React.Component {
     this.setState({ count: this.state.count - 1 });
   };
   render() {
-    const { count, product } = this.state; //destructuring of variables from state object
+    const { count, product,color } = this.state; //destructuring of variables from state object
     return (
-      <div style={{width:"auto", height:"auto", backgroundColor:"lightblue", padding:"10px"}}>
-        <h1 style={{display:"flex", justifyContent:"center", alignItems:"center"}}>{count}</h1>
+      <div style={{width:"auto", height:"auto", backgroundColor:"lightblue", padding:"10px" }}>
+        <h1 style={{display:"flex", justifyContent:"center", alignItems:"center" ,color}}>{count}</h1>
         <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"row"}}>
         
         <button onClick={this.incby1}>Next</button>

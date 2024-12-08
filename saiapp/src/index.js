@@ -23,7 +23,7 @@ import reportWebVitals from './reportWebVitals';
 // import Form from './formsubmit/formsubmit';
 // import Numbercheck from "./formsubmit/checkevenorodd/evenorodd"
 // import Todo from "./todolist/index"
-//  import Firstfunc from "./functioncomps/counter/fcounter"
+
 
 // import BasicExample from "./spin"
 
@@ -35,7 +35,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+
     {/* <Mainhome /> */}
+ 
+ 
     {/* <Tellme/> */}
     {/* <Navbar/> */}
     {/* <Main/> */}
@@ -65,10 +68,10 @@ root.render(
 
    {/* <BasicExample/> */}
 
-   {/* <Firstfunc/> */}
+   
 
       
-  </React.StrictMode>
+  </React.StrictMode> // by this component will render 2 times  for avoiding errors and console output
 );
 
 // If you want to start measuring performance in your app, pass a function

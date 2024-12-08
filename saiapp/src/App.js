@@ -12,7 +12,8 @@ import Counter from "./tasks/task7counter/counter"
 import Form from "./tasks/task8form/form";
 import Numbercheck from "./tasks/task9evenodd/check"
 import Todolist from "./tasks/task10todo/todo"
-import Lifecycle from "./tasks/task11spinner/spinner"
+import Lifecycle from "./tasks/task11spinner/spinner";
+import Updating from "./tasks/task12buttoncards/updatingphase";
 // import Profilecard from "./tasks/task11spinner/profilecard"
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Numbercheck/>
           <Todolist/>
           <Lifecycle/>
+          <Updating/>
 
        
 
