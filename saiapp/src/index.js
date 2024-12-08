@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import './index.css';
 import App from './App';
+// import Mainhome  from "./mainhome";
 import reportWebVitals from './reportWebVitals';
 // import Tellme from './sample.js';
 // import Main from './mainComponent.jsx';
@@ -34,6 +35,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    {/* <Mainhome /> */}
     {/* <Tellme/> */}
     {/* <Navbar/> */}
     {/* <Main/> */}
@@ -65,7 +67,7 @@ root.render(
 
    {/* <Firstfunc/> */}
 
-
+      
   </React.StrictMode>
 );
 

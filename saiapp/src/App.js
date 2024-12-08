@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Task1 from "./tasks/task1/react";
 import TimeTable from "./tasks/task2table/sampletable"
-import Resume from "./tasks/task4resume/resume"
+import Styling from "./tasks/task3conditionalstyling/conditionalstyling"
+// import Resume from "./tasks/task4resume/resume"
 import Acordian from "./tasks/task5/accordion"
 import Table from './tasks/task6/table';
 import Counter from "./tasks/task7counter/counter"
@@ -36,6 +37,7 @@ function App() {
       {/* tasks */}
           <Task1/>
           <TimeTable/>
+          <Styling/>
           {/* <Resume/> */}
           <Acordian/>
           <Table/>
@@ -45,7 +47,7 @@ function App() {
           <Todolist/>
           <Lifecycle/>
 
-        {/* <Profilecard/> */}
+       
 
     </div>
   );
