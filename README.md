@@ -168,4 +168,108 @@ changing state of        |     |     to child
  2. easier state management: 
             parent component manages the state, reducing complexicity in child components.
 
-            
+
+
+
+==>  -------------------------------------------------------------------------------------------
+
+VIRTUAL DOM:
+------------
+
+A. IT Is a memory -representsteion of original dom.
+b. whenever component renders, then virtual dom will creates/form.
+c. whenever any new updates occur, then new virtual dom will forms,and after comparing it with old virtual dom.(diffing).
+d. it identifies the extra changes b/w two doms(old and new dom )
+e. react will analysys required changes to be done to the real dom and updates. this process can be called as reconcilation.
+
+2. purecomponent:
+-----------------
+    whenever a component avoids unnecessor re-rendering and renders only if its state updates, then it can be called as pure component.
+
+    unnessary means -- if there doesn't exist any changes  in the state then it should not render. 
+
+     it will avoids the unnecessory of re-rendering.
+
+    in function component:
+    -----------------------
+    export default React.memo(function name) ----- 
+
+    in class component:
+    -------------------
+
+   import React,{PureComponent} from 'react'   instead of Component.
+
+3. stateless and statefull component:
+-------------------------------------
+
+        stateless component:
+            a state less component is a component is a component which doesn't have its own state an dsimply renders with its props comming from the parent.
+           ex:  A functoonal componnet can be called as a stateless component, beccause it doesn't have its own state and own life cycle methods.
+
+        statefull component:
+        --------------------
+
+        it is a comonent  which have its own state. it ca receive props from its parent and also can have its own interanal  state and change over time.
+
+        ex: class componnet because it have its own state and lifecycle methods.
+
+login api:
+-----------
+ verification can be done by ***TOKENS***
+                            ---------
+
+API:
+
+DUMMYJSON:
+-----------
+
+
+
+
+useEffect:
+----------
+     it is a hook which manages a lifecycle of a component and handles/performs side effects in a component.
+
+    1. useeffect hook with only one call back fuction and without a dependency array.
+    
+    syntax:
+
+    ==>   useEffect(()=>{})  // it will makes to perform sideefffect in an infinite loop.
+    -> whenever props or state changes.
+    
+    ==>  useEffect(()=>{},[])
+
+            []---> empty dependency array
+
+
+            it will behaves as a component did mount, executes only once when page loads.
+
+            // similsr to component did mount
+
+    ==>udeEffect(()=>{},[state])
+
+            it will execute when ever dependency state is updated
+            // component didupdate
+
+
+
+routing:
+--------
+
+it is a mechanism  in react.js which cam be navigate b/w different viewers
+
+
+npm i browser-router-dom
+
+<Borwser-dom>
+<link>
+<link></>
+</Borwser-dom>
+
+
+
+
+
+
+
+

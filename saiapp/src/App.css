@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+.navitems {
+  display: flex; 
+  overflow-x: auto; 
+  white-space: nowrap; 
+
+  background-color: #282c34;
+}
+
+.items {
+  margin-right: 50px;
+  margin-left: 50px;
+  padding: 10px;
+  text-decoration: none;
+  color: white; 
+  transition: background-color 0.5s ease;
+}
+
+.items:hover {
+ 
+  background-color: #61dafb;
+  color: black;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.navitems::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.navitems::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.navitems::-webkit-scrollbar-thumb {
+  background: #ed07c3; /* Color of the scrollbar thumb */
+}
+
+.navitems::-webkit-scrollbar-thumb:hover {
+  color: #6e03fa; /* Color of the thumb on hover */
+}
+
+/* For Firefox */
+.navitems {
+  scrollbar-width:thin; /* Options: auto, thin */
+  scrollbar-color: #f30b0b #0df609; /* thumb color and track color */
+}
